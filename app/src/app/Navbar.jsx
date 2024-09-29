@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import logo from './images/logo.png';
 import { IoMenu } from "react-icons/io5";
+import { WiMoonAltFirstQuarter } from "react-icons/wi";
 
 const Navbar = () => {
     const [menu, setMenu] = useState(false);
@@ -10,7 +11,7 @@ const Navbar = () => {
         <div id='navbar' className="fixed mt-5 top-0 left-0 w-full h-[60px] sm:h-[100px] text-black shadow-lg rounded-lg">
             <img className='sm:w-[110px] w-[70px] relative ml-[70px] mt-[-10px] sm:ml-[50px] cursor-pointer' src={logo.src} alt="logo" />
             <IoMenu onClick={() => setMenu(true)} className='sm:hidden size-[40px] mt-[-55px] cursor-pointer ml-5 transition-transform ease-in-out hover:scale-110' />
-
+            <WiMoonAltFirstQuarter className='sm:block absolute sm:size-[45px] sm:mt-[-75px] cursor-pointer sm:ml-[1400px] ml-[360px] mt-[-40px] size-[40px] w-[110px] transition-transform ease-in-out hover:scale-110' />
             {/* desktop menu */}
             <div className='mt-[-1000px]   sm:flex sm:justify-center sm:text-center sm:items-center sm:mt-[-65px] sm:gap-5'>
                 <button className='sm:text-[16px] hover:underline'>Ana Sayfa</button>
